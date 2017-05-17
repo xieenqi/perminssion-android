@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.permissionlibrary.HiPermission;
 import com.permissionlibrary.PermissionCallback;
@@ -35,12 +36,12 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onClose() {
                                 Log.i("log", "onClose");
-//                                showToast(getString(R.string.permission_on_close));
+                                showToast("你拒绝了授权");
                             }
 
                             @Override
                             public void onFinish() {
-//                                showToast(getString(R.string.permission_completed));
+                                showToast("权限申请完成");
                             }
 
                             @Override
@@ -55,5 +56,9 @@ public class MainActivity extends AppCompatActivity {
                         });
             }
         });
+    }
+
+    private void showToast(String text) {
+        Toast.makeText(MainActivity.this, text, Toast.LENGTH_SHORT).show();
     }
 }
