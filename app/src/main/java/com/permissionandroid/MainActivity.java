@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.permissionlibrary.HiPermission;
 import com.permissionlibrary.PermissionCallback;
 import com.permissionlibrary.PermissonItem;
@@ -16,11 +17,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+    LottieAnimationView animation_view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        animation_view = (LottieAnimationView) findViewById(R.id.animation_view);
         findViewById(R.id.bt1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

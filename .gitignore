@@ -7,3 +7,6 @@
 /captures
 .externalNativeBuild
 *.bat
+/loading/proguard-rules.pro
+/loading/src/test/
+/loading/src/androidTest/

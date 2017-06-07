@@ -32,11 +32,11 @@ dependencies {
 }
 
 ext {
-    bintrayRepo = 'maven'
-    bintrayName = 'library-like'
+    bintrayRepo = 'junoLibrary'//maven 的仓库名
+    bintrayName = 'permission'//maven package的仓库名
 
-    publishedGroupId = 'com.android.permission.apply'
-    libraryName = 'FBLike'
+    publishedGroupId = 'com.junolibrary'
+    libraryName = 'permissionlibrary'//module名
     artifact = 'library-like'
 //项目描述
     libraryDescription = '封装 Android 权限apply'
@@ -45,10 +45,10 @@ ext {
     //项目的git地址
     gitUrl = 'https://github.com/xieenqi/permission-android.git'
 
-    libraryVersion = '1.0.0'
+    libraryVersion = '1.0.1'
 
-    developerId = 'Juno'
-    developerName = 'Juno'
+    developerId = 'junoxnq'
+    developerName = 'junoxnq'
     developerEmail = 'junoxnq@126.com'
 
     licenseName = 'The Apache Software License, Version 2.0'
@@ -58,7 +58,6 @@ ext {
 
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
-
 
 ////项目主页
 //def siteUrl = 'https://github.com/xieenqi/permission-android'
